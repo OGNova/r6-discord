@@ -1,35 +1,12 @@
 const Docma = require('docma');
 const Package = require('./package');
 
-
 const config = {
   src: [
-    './src/*.js',
-    './README.md'
+    { readme: './README.md' },
+    { r6discord: './src/*.js'}
   ],
-  dest: './docs',
-  template: {
-    options: {
-      title: Package.name,
-      navItems: [
-        {
-          label: 'Readme',
-          href: '?content=readme'
-        },
-        {
-          label: 'Documentation',
-          href: '?api=r6-discord',
-          iconClass: 'ico-book'
-        },
-        {
-          label: 'GitHub',
-          href: Package.homepage,
-          target: '_blank',
-          iconClass: 'ico-md ico-github'
-        }
-      ]
-    }
-  }
+  dest: './docs'
 };
 
 Docma.create()
