@@ -1,0 +1,29 @@
+
+<html><head></head><body><h1 id="r6-discord">R6 Discord</h1>
+<hr />
+<p>Async JavaScript wrapper for r6stats.com. </p>
+<h2 id="example">Example</h2>
+<pre><code class="lang-javascript">const R6Api = require('r6-discord');
+const R6 = new R6Api();
+
+const username = args[0];
+const platform = args[1];
+
+// Get stats on a user on that platform.
+R6.stats(username, platform, /* Optional Boolean if you want operator stats. */).then(response =&gt; {
+  console.log(response);
+}).catch(error =&gt; {
+  console.error(error);
+});
+
+// Get details on a user on R6 depending on platform.
+R6.profile(username, platform).then(response =&gt; {
+    console.log(response);
+}).catch(error =&gt; {
+    console.error(error);
+});
+</code></pre>
+<h2 id="installation">Installation</h2>
+<pre><code>npm i r6-discord
+</code></pre><p>Using <a href="https://r6stats.com">https://r6stats.com</a> for the API and stats.</p>
+</body></html>
