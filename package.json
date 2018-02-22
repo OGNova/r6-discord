@@ -12,9 +12,14 @@
     "rainbow six",
     "rainbow six seige",
     "rainbow six: seige",
-    "r6"
+    "r6",
+    "discord"
   ],
   "homepage": "https://github.com/OGNova/r6-discord#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OGNova/r6-discord.git"
+  },
   "author": "OGNovuh",
   "license": "MIT",
   "dependencies": {
