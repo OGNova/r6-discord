@@ -2,7 +2,7 @@
   "name": "r6-discord",
   "version": "1.0.0",
   "description": "A r6stats.com API wrapper, with the idea of being used in Discord bots in mind.",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "eslint .",
     "docs": "node docs.js"
@@ -22,10 +22,10 @@
   },
   "author": "OGNovuh",
   "license": "MIT",
-  "dependencies": {
-    "snekfetch": "^3.6.4"
-  },
   "devDependencies": {
     "docma": "^1.5.3"
+  },
+  "dependencies": {
+    "node-fetch": "^2.2.0"
   }
 }
