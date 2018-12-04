@@ -21,13 +21,13 @@ module.exports = class R6 {
       
       if (!username || typeof username !== 'string') return reject(new TypeError('Invalid username. The username must be a string.'));
       
-      let operator = operators || false;
+      const operator = operators || false;
       
-      if (typeof operators !== boolean) return reject(new TypeError('The operators value must be a boolean'));
+      if (typeof operator !== boolean) return reject(new TypeError('The operators value must be a boolean'));
       if (typeof platform !== 'string' || !platform) return reject(new TypeError('Invalid platform. Platform must be one of [uplay | xone | ps4]'));
 
       let endpoint = `https://api.r6stats.com/api/v2/players/${username.toString()}/?platform=${platform}`;
-      if (operators) {
+      if (operator == true) {
         endpoint = `https://api.r6stats.com/api/v1/players/${username}/operators/?platform=${platform}`;
       }
 
