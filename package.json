@@ -1,6 +1,6 @@
 {
   "name": "r6-discord",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A r6stats.com API wrapper, with the idea of being used in Discord bots in mind.",
   "main": "index.js",
   "scripts": {
