@@ -48,7 +48,7 @@ module.exports = class R6 {
 
       if (!username || typeof username !== 'string') return reject(new TypeError('Invalid username. The username must be a string.'));
 
-      if (typeof platforms !== 'string' || !platform) return reject(new TypeError('Invalid platform. Platform must be one of [uplay | xone | ps4]'));
+      if (typeof platform !== 'string' || !platform) return reject(new TypeError('Invalid platform. Platform must be one of [uplay | xone | ps4]'));
 
       const endpoint = `https://api.r6stats.com/api/v1/users/${username}/profile/?platform=${platform}`;
 
