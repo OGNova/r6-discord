@@ -23,7 +23,7 @@ module.exports = class R6 {
       
       operator = operators || false;
       
-      if (typeof operator !== boolean) return reject(new TypeError('The operators value must be a boolean'));
+      if (typeof operators !== boolean) return reject(new TypeError('The operators value must be a boolean'));
       if (typeof platform !== 'string' || !platform) return reject(new TypeError('Invalid platform. Platform must be one of [uplay | xone | ps4]'));
 
       let endpoint = `https://api.r6stats.com/api/v2/players/${username.toString()}/?platform=${platform}`;
